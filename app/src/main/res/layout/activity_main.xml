@@ -24,8 +24,7 @@
         android:id="@+id/img_jobs"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_gravity="center"
-        android:src="@mipmap/ic_launcher"/>
+        android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/btn_guardar"
@@ -34,6 +33,5 @@
         android:text="Guardar"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"/>
-
 
 </LinearLayout>
