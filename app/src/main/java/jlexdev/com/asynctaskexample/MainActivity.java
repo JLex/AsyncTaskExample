@@ -25,11 +25,13 @@ import java.net.URL;
 import javax.net.ssl.HttpsURLConnection;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
+
+    // Sólo necesito implements OnClick (arriba) ** Falta corregir Dónde guardar mi imagen
 
     private TextView tvTitulo;
     private ImageView imgJobs;
-    private Button btnGuardar;
+//    private Button btnGuardar;
 
     // Contante
     public static final String URL =
@@ -42,17 +44,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         tvTitulo = (TextView)findViewById(R.id.tv_jobs);
         imgJobs = (ImageView)findViewById(R.id.img_jobs);
-        btnGuardar = (Button)findViewById(R.id.btn_guardar);
+//        btnGuardar = (Button)findViewById(R.id.btn_guardar);
 
         // Carga de Imagen
         CargaImagen nuevaTarea = new CargaImagen();
         nuevaTarea.execute(URL);
 
 
-        btnGuardar.setOnClickListener(this);
+//        btnGuardar.setOnClickListener(this);
     }
 
-    // Método para Guardar al Clickar ;)
+
+    /* ********** Método para Guardar al Clickar ;) ********** */
+/**
     @Override
     public void onClick(View v) {
 
@@ -62,8 +66,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Toast.makeText(getApplicationContext(), ruta, Toast.LENGTH_SHORT).show();
     }
+*/
 
-    // Método Guardar de "OnClick"
+    /* ********** Método Guardar de "OnClick" ********** */
+/**
     private String guardarImagen(Context applicationContext, Bitmap imagen, Bitmap imagen1) {
 
         ContextWrapper cw = new ContextWrapper(applicationContext);
@@ -85,11 +91,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return myPath.getAbsolutePath();
     }
 
+*/
 
 
 
-
-    // Clase Cargar Imagen
+    /* ********** Clase Cargar Imagen ********** */
 
     public class CargaImagen extends AsyncTask<String, Void, Bitmap> {
 
@@ -126,8 +132,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-
         // Método para Descargar Imagen
+
         private Bitmap descargarImagen(String imageHttpAdress) {
 
             URL imageUrl = null;

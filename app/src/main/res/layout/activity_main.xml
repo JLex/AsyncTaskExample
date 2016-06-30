@@ -25,7 +25,7 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_gravity="center"/>
-
+<!--
     <Button
         android:id="@+id/btn_guardar"
         android:layout_width="wrap_content"
@@ -33,5 +33,5 @@
         android:text="Guardar"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"/>
-
+-->
 </LinearLayout>
