@@ -24,7 +24,11 @@ import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
 
-
+/** --- AsyncTask ---
+ * Fuentes:
+ * https://sekthdroid.wordpress.com/2012/12/01/guardar-imagen-en-memoria-interna-android/
+ * http://jonsegador.com/2010/03/mostrarcargar-imagen-externa-en-una-aplicacion-android/
+ */
 public class MainActivity extends AppCompatActivity {
 
     // Sólo necesito implements OnClick (arriba) ** Falta corregir Dónde guardar mi imagen
